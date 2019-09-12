@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -248,16 +248,13 @@ Version 1.0
 Designed by &lt;a href="http://bastelstube.rocci.net/"&gt;Martin's Bastelstube&lt;/a&gt;&lt;br&gt;
 Comments / complaints / bug reports / suggestions to &lt;author&gt;eightbit@web.de&lt;/author&gt;</description>
 <packages>
-<package name="RASPI_BOARD_B+_EDGES_3DRILL">
+<package name="RASPI_BOARD_B+_EDGES_0DRILL">
 <description>Raspberry Pi board model B+, outline is only marked by its edges&lt;br&gt;
-with 3 drill holes (top left hole is missing to allow routing of power supply lines)</description>
+without any drill holes</description>
 <wire x1="0" y1="3" x2="3" y2="0" width="0.254" layer="52" curve="90"/>
 <wire x1="82" y1="0" x2="85" y2="3" width="0.254" layer="52" curve="90"/>
 <wire x1="85" y1="53" x2="82" y2="56" width="0.254" layer="52" curve="90"/>
 <wire x1="3" y1="56" x2="0" y2="53" width="0.254" layer="52" curve="90"/>
-<hole x="3.5" y="3.5" drill="2.75"/>
-<hole x="61.5" y="3.5" drill="2.75"/>
-<hole x="61.5" y="52.5" drill="2.75"/>
 <pad name="1" x="8.37" y="51.23" drill="1" diameter="1.778" shape="square"/>
 <pad name="2" x="8.37" y="53.77" drill="1" diameter="1.778"/>
 <pad name="3" x="10.91" y="51.23" drill="1" diameter="1.778"/>
@@ -312,9 +309,6 @@ with 3 drill holes (top left hole is missing to allow routing of power supply li
 <wire x1="8.0525" y1="49.6425" x2="8.6875" y2="49.6425" width="0.127" layer="21"/>
 <wire x1="8.6875" y1="49.6425" x2="8.6875" y2="49.96" width="0.127" layer="21"/>
 <text x="8.0525" y="48.3725" size="1.016" layer="21" font="vector" ratio="10">1</text>
-<circle x="3.5" y="3.5" radius="3.1" width="0.127" layer="52"/>
-<circle x="61.5" y="3.5" radius="3.1" width="0.127" layer="52"/>
-<circle x="61.5" y="52.5" radius="3.1" width="0.127" layer="52"/>
 </package>
 </packages>
 </library>
@@ -407,6 +401,87 @@ TO-18, lead spacing 2.54 mm, cathode marking&lt;p&gt;
 Inifineon</description>
 <packageinstances>
 <packageinstance name="SFH482"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="v-reg" urn="urn:adsk.eagle:library:409">
+<description>&lt;b&gt;Voltage Regulators&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="78LXX" urn="urn:adsk.eagle:footprint:30283/1" library_version="4">
+<description>&lt;b&gt;VOLTAGE REGULATOR&lt;/b&gt;</description>
+<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.1524" layer="21" curve="-111.098957"/>
+<wire x1="0.7868" y1="2.5484" x2="2.095" y2="-1.651" width="0.1524" layer="21" curve="-111.09954"/>
+<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
+<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.1524" layer="51" curve="-34.293591"/>
+<pad name="OUT" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="GND" x="0" y="1.905" drill="0.8128" shape="octagon"/>
+<pad name="IN" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="-0.635" y="0.889" size="1.27" layer="51" ratio="10">-</text>
+<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.778" y="-0.635" size="1.27" layer="51" ratio="10">O</text>
+<text x="0.635" y="-0.635" size="1.27" layer="51" ratio="10">I</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="78LXX" urn="urn:adsk.eagle:package:30346/1" type="box" library_version="4">
+<description>VOLTAGE REGULATOR</description>
+<packageinstances>
+<packageinstance name="78LXX"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="fuse" urn="urn:adsk.eagle:library:233">
+<description>&lt;b&gt;Fuses and Fuse Holders&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="19559" urn="urn:adsk.eagle:footprint:14028/1" library_version="2">
+<description>&lt;b&gt;FUSE HOLDER&lt;/b&gt;&lt;p&gt;
+TR5 Fuse Holder Wickmann</description>
+<wire x1="1.778" y1="-1.397" x2="2.413" y2="-2.032" width="0.1524" layer="51"/>
+<wire x1="1.397" y1="-1.778" x2="2.032" y2="-2.413" width="0.1524" layer="51"/>
+<wire x1="-2.032" y1="2.413" x2="-1.397" y2="1.778" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="2.032" x2="-1.778" y2="1.397" width="0.1524" layer="51"/>
+<wire x1="3.175" y1="-3.937" x2="2.413" y2="-3.175" width="0.1524" layer="51"/>
+<wire x1="2.413" y1="-3.175" x2="3.175" y2="-2.413" width="0.1524" layer="51"/>
+<wire x1="3.175" y1="-2.413" x2="3.937" y2="-3.175" width="0.1524" layer="51"/>
+<wire x1="4.064" y1="-3.683" x2="3.683" y2="-4.064" width="0.1524" layer="21"/>
+<wire x1="2.794" y1="-3.175" x2="3.175" y2="-2.794" width="0.1524" layer="51"/>
+<wire x1="-3.175" y1="2.413" x2="-2.413" y2="3.175" width="0.1524" layer="51"/>
+<wire x1="-3.175" y1="3.937" x2="-2.413" y2="3.175" width="0.1524" layer="51"/>
+<wire x1="-3.937" y1="3.175" x2="-3.175" y2="2.413" width="0.1524" layer="51"/>
+<wire x1="-3.175" y1="2.794" x2="-2.794" y2="3.175" width="0.1524" layer="51"/>
+<wire x1="-4.064" y1="3.683" x2="-3.683" y2="4.064" width="0.1524" layer="21"/>
+<wire x1="4.064" y1="-3.683" x2="3.683" y2="-3.302" width="0.1524" layer="21"/>
+<wire x1="3.683" y1="-3.302" x2="3.175" y2="-2.794" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="-3.683" x2="3.683" y2="-4.064" width="0.1524" layer="21"/>
+<wire x1="3.302" y1="-3.683" x2="2.794" y2="-3.175" width="0.1524" layer="51"/>
+<wire x1="-4.064" y1="3.683" x2="-3.683" y2="3.302" width="0.1524" layer="21"/>
+<wire x1="-3.683" y1="3.302" x2="-3.175" y2="2.794" width="0.1524" layer="51"/>
+<wire x1="-3.683" y1="4.064" x2="-3.302" y2="3.683" width="0.1524" layer="21"/>
+<wire x1="-3.302" y1="3.683" x2="-2.794" y2="3.175" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="5.08" width="0.1524" layer="21"/>
+<circle x="1.905" y="-1.905" radius="0.889" width="0.1524" layer="51"/>
+<circle x="-1.905" y="1.905" radius="0.889" width="0.1524" layer="51"/>
+<circle x="-1.905" y="1.905" radius="0.5334" width="0.1524" layer="51"/>
+<circle x="1.905" y="-1.905" radius="0.5334" width="0.1524" layer="51"/>
+<pad name="1" x="-2.54" y="2.54" drill="1.3208" diameter="2.54" shape="octagon"/>
+<pad name="2" x="2.54" y="-2.54" drill="1.3208" diameter="2.54" shape="octagon"/>
+<text x="-4.572" y="-0.889" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="5.334" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="19559" urn="urn:adsk.eagle:package:14056/1" type="box" library_version="2">
+<description>FUSE HOLDER
+TR5 Fuse Holder Wickmann</description>
+<packageinstances>
+<packageinstance name="19559"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -607,7 +682,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="X1" library="raspberrypi_bastelstube_v13" package="RASPI_BOARD_B+_EDGES_3DRILL" value="RASPI_BOARD_B+_E3" x="0" y="0" smashed="yes"/>
+<element name="X1" library="raspberrypi_bastelstube_v13" package="RASPI_BOARD_B+_EDGES_0DRILL" value="RASPI_BOARD_B+_E0" x="0" y="0" smashed="yes"/>
 <element name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" package="22-23-2021" package3d_urn="urn:adsk.eagle:package:8078633/1" value="22-23-2021" x="10" y="44" smashed="yes" rot="R90">
 <attribute name="MF" value="MOLEX" x="-2" y="36" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="22-23-2021" x="-2" y="36" size="1.778" layer="27" rot="R90" display="off"/>
@@ -618,12 +693,26 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="15.08" y="41.46" size="1.016" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="Q1" library="transistors" package="TO-92" value="" x="19" y="44" smashed="yes" rot="R270">
-<attribute name="NAME" x="19.635" y="40.825" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="16.54" y="46.77" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="17.73" y="40.825" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="LED1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="SFH482" package3d_urn="urn:adsk.eagle:package:6240546/1" value="" x="15" y="35" smashed="yes" rot="R180">
 <attribute name="NAME" x="16.27" y="31.952" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="16.27" y="39.318" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="IC1" library="v-reg" library_urn="urn:adsk.eagle:library:409" package="78LXX" package3d_urn="urn:adsk.eagle:package:30346/1" value="" x="26" y="34" smashed="yes">
+<attribute name="NAME" x="29.175" y="34.635" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="6" x="26" y="34" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="29.175" y="32.73" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="F1" library="fuse" library_urn="urn:adsk.eagle:library:233" package="19559" package3d_urn="urn:adsk.eagle:package:14056/1" value="" x="23" y="26" smashed="yes" rot="R270">
+<attribute name="MF" value="" x="23" y="26" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="55900000001" x="23" y="26" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="28.334" y="29.81" size="1.778" layer="25" ratio="10" rot="R270"/>
+<attribute name="OC_FARNELL" value="9516360" x="23" y="26" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="02P0286" x="23" y="26" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="POPULARITY" value="4" x="23" y="26" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="22.111" y="30.572" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
 </elements>
 <signals>
@@ -683,6 +772,7 @@ design rules under a new name.</description>
 <contactref element="X1" pad="6"/>
 <contactref element="X2" pad="2"/>
 <contactref element="Q1" pad="1"/>
+<contactref element="IC1" pad="GND"/>
 </signal>
 <signal name="3V3">
 <contactref element="X1" pad="1"/>
@@ -690,7 +780,9 @@ design rules under a new name.</description>
 <signal name="VCC">
 <contactref element="X2" pad="1"/>
 <contactref element="LED1" pad="K"/>
+<contactref element="F1" pad="2"/>
 <wire x1="13.73" y1="35" x2="10" y2="42.73" width="0" layer="19" extent="1-1"/>
+<wire x1="20.46" y1="23.46" x2="13.73" y2="35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO17">
 <contactref element="Q1" pad="2"/>
@@ -704,6 +796,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$2">
 <contactref element="X1" pad="2"/>
+<contactref element="IC1" pad="OUT"/>
+<wire x1="24.73" y1="34" x2="8.37" y2="53.77" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$1">
+<contactref element="IC1" pad="IN"/>
+<contactref element="F1" pad="1"/>
+<wire x1="25.54" y1="28.54" x2="27.27" y2="34" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
