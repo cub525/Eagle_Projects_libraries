@@ -3428,80 +3428,6 @@ single carbon potentiometer, 16 mm, S3ROH</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Test">
-<packages>
-<package name="AUDIO5PIN">
-<pad name="GND" x="-5" y="0" drill="0.6" shape="long" rot="R90"/>
-<pad name="A2" x="0" y="2.5" drill="0.6" shape="long" rot="R180"/>
-<pad name="A1" x="0" y="5" drill="0.6" shape="long" rot="R180"/>
-<pad name="A3" x="0" y="-2.5" drill="0.6" shape="long" rot="R180"/>
-<pad name="A4" x="0" y="-5" drill="0.6" shape="long" rot="R180"/>
-<wire x1="-0.7" y1="5.3" x2="0.7" y2="5.3" width="0" layer="46"/>
-<wire x1="0.7" y1="5.3" x2="0.7" y2="4.7" width="0" layer="46"/>
-<wire x1="0.7" y1="4.7" x2="-0.7" y2="4.7" width="0" layer="46"/>
-<wire x1="-0.7" y1="4.7" x2="-0.7" y2="5.3" width="0" layer="46"/>
-<wire x1="-0.7" y1="2.8" x2="0.7" y2="2.8" width="0" layer="46"/>
-<wire x1="0.7" y1="2.8" x2="0.7" y2="2.2" width="0" layer="46"/>
-<wire x1="0.7" y1="2.2" x2="-0.7" y2="2.2" width="0" layer="46"/>
-<wire x1="-0.7" y1="2.2" x2="-0.7" y2="2.8" width="0" layer="46"/>
-<wire x1="-0.7" y1="-2.2" x2="0.7" y2="-2.2" width="0" layer="46"/>
-<wire x1="0.7" y1="-2.2" x2="0.7" y2="-2.8" width="0" layer="46"/>
-<wire x1="0.7" y1="-2.8" x2="-0.71" y2="-2.8" width="0" layer="46"/>
-<wire x1="-0.71" y1="-2.8" x2="-0.71" y2="-2.2" width="0" layer="46"/>
-<wire x1="-0.7" y1="-4.7" x2="0.7" y2="-4.7" width="0" layer="46"/>
-<wire x1="0.7" y1="-4.7" x2="0.7" y2="-5.3" width="0" layer="46"/>
-<wire x1="0.7" y1="-5.3" x2="-0.7" y2="-5.3" width="0" layer="46"/>
-<wire x1="-0.7" y1="-5.3" x2="-0.7" y2="-4.7" width="0" layer="46"/>
-<wire x1="-5.3" y1="0.7" x2="-4.7" y2="0.7" width="0" layer="46"/>
-<wire x1="-4.7" y1="0.7" x2="-4.7" y2="-0.68" width="0" layer="46"/>
-<wire x1="-4.7" y1="-0.68" x2="-5.3" y2="-0.68" width="0" layer="46"/>
-<wire x1="-5.3" y1="-0.68" x2="-5.3" y2="0.7" width="0" layer="46"/>
-</package>
-</packages>
-<symbols>
-<symbol name="AUDIO5PIN">
-<wire x1="-2.54" y1="2.54" x2="-12.7" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-12.7" y2="5.08" width="0.254" layer="94" locked="yes"/>
-<wire x1="-2.54" y1="0" x2="-12.7" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-12.7" y2="-2.54" width="0.254" layer="94"/>
-<circle x="0" y="2.54" radius="0.803215625" width="0.254" layer="94"/>
-<circle x="-2.54" y="2.54" radius="0.762" width="0.254" layer="94"/>
-<circle x="-2.54" y="0" radius="0.762" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="0.71841875" width="0.254" layer="94"/>
-<circle x="0" y="1.27" radius="4.57905" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
-<pin name="A1" x="-12.7" y="5.08" length="middle"/>
-<pin name="A2" x="-12.7" y="2.54" length="middle"/>
-<pin name="A3" x="-12.7" y="0" length="middle"/>
-<pin name="A4" x="-12.7" y="-2.54" length="middle"/>
-<pin name="GND" x="-12.7" y="-5.08" length="middle"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="AUDIO5PIN">
-<gates>
-<gate name="G$1" symbol="AUDIO5PIN" x="2.54" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="AUDIO5PIN">
-<connects>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="A3" pad="A3"/>
-<connect gate="G$1" pin="A4" pad="A4"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="supply1" urn="urn:adsk.eagle:library:371">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
@@ -3605,6 +3531,81 @@ single carbon potentiometer, 16 mm, S3ROH</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Test">
+<packages>
+<package name="AUDIO3PIN">
+<pad name="INPUT1" x="0" y="5" drill="0.6" shape="long"/>
+<pad name="INPUT2" x="0" y="-5" drill="0.6" shape="long"/>
+<pad name="GND" x="-5" y="0" drill="0.6" shape="long" rot="R90"/>
+<wire x1="-9.5" y1="6" x2="-9.5" y2="2" width="0.1524" layer="21"/>
+<wire x1="-9.5" y1="2" x2="-9.5" y2="-2" width="0.1524" layer="21"/>
+<wire x1="-9.5" y1="-2" x2="-9.5" y2="-6" width="0.1524" layer="21"/>
+<wire x1="-9.5" y1="-6" x2="1.5" y2="-6" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="-6" x2="1.5" y2="6" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="6" x2="-9.5" y2="6" width="0.1524" layer="21"/>
+<wire x1="-9.5" y1="2" x2="-8.3" y2="2" width="0.1524" layer="21"/>
+<wire x1="-8.3" y1="2" x2="-8.3" y2="-2" width="0.1524" layer="21"/>
+<wire x1="-8.3" y1="-2" x2="-9.5" y2="-2" width="0.1524" layer="21"/>
+<circle x="-7.5" y="5" radius="0.6" width="0" layer="46"/>
+<circle x="-5" y="5" radius="0.6" width="0" layer="46"/>
+<circle x="-7.5" y="-5" radius="0.6" width="0" layer="46"/>
+<circle x="-5" y="-5" radius="0.608275" width="0" layer="46"/>
+<circle x="0" y="0" radius="0.6" width="0" layer="46"/>
+<wire x1="-5.3" y1="0.7" x2="-5.3" y2="-0.7" width="0" layer="46"/>
+<wire x1="-5.3" y1="-0.7" x2="-4.7" y2="-0.7" width="0" layer="46"/>
+<wire x1="-4.7" y1="-0.7" x2="-4.7" y2="0.7" width="0" layer="46"/>
+<wire x1="-4.7" y1="0.7" x2="-5.3" y2="0.7" width="0" layer="46"/>
+<wire x1="-0.7" y1="5.3" x2="-0.7" y2="4.7" width="0" layer="46"/>
+<wire x1="-0.7" y1="4.7" x2="0.7" y2="4.7" width="0" layer="46"/>
+<wire x1="0.7" y1="4.7" x2="0.7" y2="5.3" width="0" layer="46"/>
+<wire x1="0.7" y1="5.3" x2="-0.7" y2="5.3" width="0" layer="46"/>
+<wire x1="-0.7" y1="-4.7" x2="-0.7" y2="-5.3" width="0" layer="46"/>
+<wire x1="-0.7" y1="-5.3" x2="0.7" y2="-5.3" width="0" layer="46"/>
+<wire x1="0.7" y1="-5.3" x2="0.7" y2="-4.7" width="0" layer="46"/>
+<wire x1="0.7" y1="-4.7" x2="-0.7" y2="-4.7" width="0" layer="46"/>
+</package>
+</packages>
+<symbols>
+<symbol name="AUDIO3PIN">
+<wire x1="0" y1="9.144" x2="1.27" y2="9.144" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="9.144" x2="2.54" y2="9.144" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="9.144" x2="2.54" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.524" x2="0" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.524" x2="0" y2="9.144" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="9.144" x2="1.27" y2="14.224" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="14.224" x2="12.7" y2="14.224" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="6.096" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="6.096" y1="10.16" x2="5.08" y2="9.144" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="9.144" x2="4.064" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="0.254" x2="6.35" y2="0.254" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="0.254" x2="5.08" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="1.524" x2="3.81" y2="0.254" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.254" x2="3.81" y2="0" width="0.1524" layer="94"/>
+<pin name="GND" x="12.7" y="14.224" visible="pad" length="short" rot="R180"/>
+<pin name="INPUT1" x="12.7" y="10.16" visible="pad" length="short" rot="R180"/>
+<pin name="INPUT2" x="12.7" y="0.254" visible="pad" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AUDIO3PIN">
+<gates>
+<gate name="G$1" symbol="AUDIO3PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AUDIO3PIN">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="INPUT1" pad="INPUT1"/>
+<connect gate="G$1" pin="INPUT2" pad="INPUT2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3648,11 +3649,6 @@ single carbon potentiometer, 16 mm, S3ROH</description>
 <attribute name="MPN" value="1N4148 (DO-35)"/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
-<part name="U$1" library="Test" deviceset="AUDIO5PIN" device="">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
-</part>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device="" package3d_urn="urn:adsk.eagle:package:8078633/1">
 <attribute name="OC_NEWARK" value="unknown"/>
@@ -3665,6 +3661,7 @@ single carbon potentiometer, 16 mm, S3ROH</description>
 <attribute name="MPN" value="1N4148 (DO-35)"/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
+<part name="U$1" library="Test" deviceset="AUDIO3PIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3714,11 +3711,6 @@ single carbon potentiometer, 16 mm, S3ROH</description>
 <attribute name="MF" x="96.52" y="45.72" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="96.52" y="45.72" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$1" gate="G$1" x="127" y="63.5" smashed="yes">
-<attribute name="OC_NEWARK" x="127" y="63.5" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="127" y="63.5" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="127" y="63.5" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="GND1" gate="1" x="124.46" y="53.34" smashed="yes" rot="R90">
 <attribute name="VALUE" x="127" y="50.8" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -3743,16 +3735,17 @@ single carbon potentiometer, 16 mm, S3ROH</description>
 <attribute name="MF" x="86.36" y="45.72" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="86.36" y="45.72" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="U$1" gate="G$1" x="127" y="71.12" smashed="yes" rot="R180"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="114.3" y1="58.42" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="56.896" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="53.34" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="X1" gate="-1" pin="S"/>
@@ -3763,14 +3756,20 @@ single carbon potentiometer, 16 mm, S3ROH</description>
 <wire x1="71.12" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="71.12" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
 <junction x="71.12" y="71.12"/>
-<pinref part="U$1" gate="G$1" pin="A2"/>
-<wire x1="101.6" y1="66.04" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <junction x="86.36" y="71.12"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 <junction x="96.52" y="71.12"/>
+<pinref part="R4" gate="G$1" pin="1S"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="71.12" y1="48.26" x2="86.36" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="C"/>
+<wire x1="86.36" y1="48.26" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
+<junction x="86.36" y="48.26"/>
+<wire x1="96.52" y1="48.26" x2="101.6" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="48.26" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
+<junction x="96.52" y="48.26"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3796,12 +3795,13 @@ single carbon potentiometer, 16 mm, S3ROH</description>
 <wire x1="86.36" y1="76.2" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="76.2" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="76.2" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="A1"/>
 <wire x1="104.14" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <junction x="86.36" y="76.2"/>
 <pinref part="D3" gate="G$1" pin="C"/>
 <junction x="96.52" y="76.2"/>
+<pinref part="U$1" gate="G$1" pin="INPUT2"/>
+<wire x1="114.3" y1="68.58" x2="114.3" y2="70.866" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -3820,21 +3820,6 @@ single carbon potentiometer, 16 mm, S3ROH</description>
 <wire x1="71.12" y1="58.42" x2="71.12" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="R4" gate="G$1" pin="1S"/>
-<pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="71.12" y1="48.26" x2="86.36" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="D4" gate="G$1" pin="C"/>
-<wire x1="86.36" y1="48.26" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
-<junction x="86.36" y="48.26"/>
-<wire x1="96.52" y1="48.26" x2="101.6" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="48.26" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
-<junction x="96.52" y="48.26"/>
-<pinref part="U$1" gate="G$1" pin="A3"/>
-<wire x1="101.6" y1="63.5" x2="114.3" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1A"/>
@@ -3842,7 +3827,6 @@ single carbon potentiometer, 16 mm, S3ROH</description>
 <wire x1="86.36" y1="43.18" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="43.18" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="43.18" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="A4"/>
 <wire x1="104.14" y1="60.96" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="D4" gate="G$1" pin="A"/>
 <junction x="96.52" y="43.18"/>
@@ -3853,6 +3837,7 @@ single carbon potentiometer, 16 mm, S3ROH</description>
 <wire x1="40.64" y1="40.64" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="40.64" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
 <junction x="71.12" y="43.18"/>
+<pinref part="U$1" gate="G$1" pin="INPUT1"/>
 </segment>
 </net>
 </nets>
@@ -3875,10 +3860,6 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
-</note>
-<note version="8.5" severity="warning">
-Since Version 8.5, EAGLE supports locking for holes, vias, wires and polygons. 
-The locking property on all objects of these types will not be understood in this version. 
 </note>
 </compatibility>
 </eagle>
