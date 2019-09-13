@@ -440,48 +440,34 @@ Inifineon</description>
 <description>&lt;b&gt;Fuses and Fuse Holders&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="19559" urn="urn:adsk.eagle:footprint:14028/1" library_version="2">
-<description>&lt;b&gt;FUSE HOLDER&lt;/b&gt;&lt;p&gt;
-TR5 Fuse Holder Wickmann</description>
-<wire x1="1.778" y1="-1.397" x2="2.413" y2="-2.032" width="0.1524" layer="51"/>
-<wire x1="1.397" y1="-1.778" x2="2.032" y2="-2.413" width="0.1524" layer="51"/>
-<wire x1="-2.032" y1="2.413" x2="-1.397" y2="1.778" width="0.1524" layer="51"/>
-<wire x1="-2.413" y1="2.032" x2="-1.778" y2="1.397" width="0.1524" layer="51"/>
-<wire x1="3.175" y1="-3.937" x2="2.413" y2="-3.175" width="0.1524" layer="51"/>
-<wire x1="2.413" y1="-3.175" x2="3.175" y2="-2.413" width="0.1524" layer="51"/>
-<wire x1="3.175" y1="-2.413" x2="3.937" y2="-3.175" width="0.1524" layer="51"/>
-<wire x1="4.064" y1="-3.683" x2="3.683" y2="-4.064" width="0.1524" layer="21"/>
-<wire x1="2.794" y1="-3.175" x2="3.175" y2="-2.794" width="0.1524" layer="51"/>
-<wire x1="-3.175" y1="2.413" x2="-2.413" y2="3.175" width="0.1524" layer="51"/>
-<wire x1="-3.175" y1="3.937" x2="-2.413" y2="3.175" width="0.1524" layer="51"/>
-<wire x1="-3.937" y1="3.175" x2="-3.175" y2="2.413" width="0.1524" layer="51"/>
-<wire x1="-3.175" y1="2.794" x2="-2.794" y2="3.175" width="0.1524" layer="51"/>
-<wire x1="-4.064" y1="3.683" x2="-3.683" y2="4.064" width="0.1524" layer="21"/>
-<wire x1="4.064" y1="-3.683" x2="3.683" y2="-3.302" width="0.1524" layer="21"/>
-<wire x1="3.683" y1="-3.302" x2="3.175" y2="-2.794" width="0.1524" layer="51"/>
-<wire x1="3.302" y1="-3.683" x2="3.683" y2="-4.064" width="0.1524" layer="21"/>
-<wire x1="3.302" y1="-3.683" x2="2.794" y2="-3.175" width="0.1524" layer="51"/>
-<wire x1="-4.064" y1="3.683" x2="-3.683" y2="3.302" width="0.1524" layer="21"/>
-<wire x1="-3.683" y1="3.302" x2="-3.175" y2="2.794" width="0.1524" layer="51"/>
-<wire x1="-3.683" y1="4.064" x2="-3.302" y2="3.683" width="0.1524" layer="21"/>
-<wire x1="-3.302" y1="3.683" x2="-2.794" y2="3.175" width="0.1524" layer="51"/>
-<circle x="0" y="0" radius="5.08" width="0.1524" layer="21"/>
-<circle x="1.905" y="-1.905" radius="0.889" width="0.1524" layer="51"/>
-<circle x="-1.905" y="1.905" radius="0.889" width="0.1524" layer="51"/>
-<circle x="-1.905" y="1.905" radius="0.5334" width="0.1524" layer="51"/>
-<circle x="1.905" y="-1.905" radius="0.5334" width="0.1524" layer="51"/>
-<pad name="1" x="-2.54" y="2.54" drill="1.3208" diameter="2.54" shape="octagon"/>
-<pad name="2" x="2.54" y="-2.54" drill="1.3208" diameter="2.54" shape="octagon"/>
-<text x="-4.572" y="-0.889" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-3.81" y="5.334" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<package name="TE5" urn="urn:adsk.eagle:footprint:14038/1" library_version="2">
+<description>&lt;b&gt;FUSE&lt;/b&gt;&lt;p&gt;
+Wickmann</description>
+<wire x1="3.683" y1="2.032" x2="4.318" y2="1.397" width="0.1524" layer="21" curve="-90"/>
+<wire x1="3.683" y1="-2.032" x2="4.318" y2="-1.397" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.318" y1="-1.397" x2="-3.683" y2="-2.032" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.318" y1="1.397" x2="-3.683" y2="2.032" width="0.1524" layer="21" curve="-90"/>
+<wire x1="3.683" y1="2.032" x2="-3.683" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="-4.318" y1="1.397" x2="-4.318" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="-3.683" y1="-2.032" x2="3.683" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="4.318" y1="-1.397" x2="4.318" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="0" x2="2.159" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="0.381" x2="-1.27" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="-0.381" x2="1.27" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="1.27" y1="0.381" x2="1.27" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="1.27" y1="0.381" x2="-1.27" y2="0.381" width="0.1524" layer="51"/>
+<pad name="1" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-4.191" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-4.318" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="19559" urn="urn:adsk.eagle:package:14056/1" type="box" library_version="2">
-<description>FUSE HOLDER
-TR5 Fuse Holder Wickmann</description>
+<package3d name="TE5" urn="urn:adsk.eagle:package:14069/1" type="box" library_version="2">
+<description>FUSE
+Wickmann</description>
 <packageinstances>
-<packageinstance name="19559"/>
+<packageinstance name="TE5"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -700,19 +686,19 @@ design rules under a new name.</description>
 <attribute name="NAME" x="16.27" y="31.952" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="16.27" y="39.318" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="IC1" library="v-reg" library_urn="urn:adsk.eagle:library:409" package="78LXX" package3d_urn="urn:adsk.eagle:package:30346/1" value="" x="26" y="34" smashed="yes">
-<attribute name="NAME" x="29.175" y="34.635" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="6" x="26" y="34" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="29.175" y="32.73" size="1.27" layer="27" ratio="10"/>
+<element name="IC2" library="v-reg" library_urn="urn:adsk.eagle:library:409" package="78LXX" package3d_urn="urn:adsk.eagle:package:30346/1" value="" x="27" y="31" smashed="yes" rot="R270">
+<attribute name="NAME" x="27.635" y="27.825" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="POPULARITY" value="6" x="27" y="31" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="25.73" y="27.825" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="F1" library="fuse" library_urn="urn:adsk.eagle:library:233" package="19559" package3d_urn="urn:adsk.eagle:package:14056/1" value="" x="23" y="26" smashed="yes" rot="R270">
-<attribute name="MF" value="" x="23" y="26" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="55900000001" x="23" y="26" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="28.334" y="29.81" size="1.778" layer="25" ratio="10" rot="R270"/>
-<attribute name="OC_FARNELL" value="9516360" x="23" y="26" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="02P0286" x="23" y="26" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="POPULARITY" value="4" x="23" y="26" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="22.111" y="30.572" size="1.778" layer="27" ratio="10" rot="R270"/>
+<element name="F2" library="fuse" library_urn="urn:adsk.eagle:library:233" package="TE5" package3d_urn="urn:adsk.eagle:package:14069/1" value="" x="27" y="44" smashed="yes" rot="R270">
+<attribute name="MF" value="" x="27" y="44" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="27" y="44" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="32.08" y="46.54" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="OC_FARNELL" value="unknown" x="27" y="44" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="27" y="44" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="POPULARITY" value="0" x="27" y="44" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="24.46" y="46.54" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 </elements>
 <signals>
@@ -772,7 +758,7 @@ design rules under a new name.</description>
 <contactref element="X1" pad="6"/>
 <contactref element="X2" pad="2"/>
 <contactref element="Q1" pad="1"/>
-<contactref element="IC1" pad="GND"/>
+<contactref element="IC2" pad="GND"/>
 </signal>
 <signal name="3V3">
 <contactref element="X1" pad="1"/>
@@ -780,9 +766,9 @@ design rules under a new name.</description>
 <signal name="VCC">
 <contactref element="X2" pad="1"/>
 <contactref element="LED1" pad="K"/>
-<contactref element="F1" pad="2"/>
-<wire x1="13.73" y1="35" x2="10" y2="42.73" width="0" layer="19" extent="1-1"/>
-<wire x1="20.46" y1="23.46" x2="13.73" y2="35" width="0" layer="19" extent="1-1"/>
+<contactref element="IC2" pad="IN"/>
+<wire x1="13.73" y1="35" x2="27" y2="29.73" width="0" layer="19" extent="1-1"/>
+<wire x1="10" y1="42.73" x2="13.73" y2="35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO17">
 <contactref element="Q1" pad="2"/>
@@ -796,13 +782,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$2">
 <contactref element="X1" pad="2"/>
-<contactref element="IC1" pad="OUT"/>
-<wire x1="24.73" y1="34" x2="8.37" y2="53.77" width="0" layer="19" extent="1-1"/>
+<contactref element="F2" pad="1"/>
+<wire x1="8.37" y1="53.77" x2="27" y2="46.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
-<contactref element="IC1" pad="IN"/>
-<contactref element="F1" pad="1"/>
-<wire x1="25.54" y1="28.54" x2="27.27" y2="34" width="0" layer="19" extent="1-1"/>
+<contactref element="IC2" pad="OUT"/>
+<contactref element="F2" pad="2"/>
+<wire x1="27" y1="32.27" x2="27" y2="41.46" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
