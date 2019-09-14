@@ -3874,7 +3874,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/MINISMDC110F-
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="X1" library="raspberrypi_bastelstube_v13" deviceset="RASPI_BOARD_B+" device="_E3"/>
+<part name="X1" library="raspberrypi_bastelstube_v13" deviceset="RASPI_BOARD_B+" device="_E0" value="RASPI_BOARD_B+_E0"/>
 <part name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device="" package3d_urn="urn:adsk.eagle:package:8078633/1"/>
 <part name="Q1" library="transistors" deviceset="2N700*" device="_TO92" technology="0"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -3892,6 +3892,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/MINISMDC110F-
 <text x="289.56" y="16.51" size="1.778" layer="94" ratio="15">Checked  by:</text>
 <text x="289.56" y="5.08" size="1.778" layer="94">FLYFISH TECHNOLOGIES d.o.o.</text>
 <text x="374.65" y="5.08" size="2.54" layer="94" ratio="10">v0.1</text>
+<text x="309.88" y="20.32" size="1.778" layer="91">Emmett Hart</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
