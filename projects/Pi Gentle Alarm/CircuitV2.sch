@@ -3874,16 +3874,36 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/MINISMDC110F-
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="X1" library="raspberrypi_bastelstube_v13" deviceset="RASPI_BOARD_B+" device="_E0" value="RASPI_BOARD_B+_E0"/>
+<part name="X1" library="raspberrypi_bastelstube_v13" deviceset="RASPI_BOARD_B+" device="_E0" value="RASPI_BOARD_B+_E0">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
 <part name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device="" package3d_urn="urn:adsk.eagle:package:8078633/1"/>
-<part name="Q1" library="transistors" deviceset="2N700*" device="_TO92" technology="0"/>
+<part name="Q1" library="transistors" deviceset="2N700*" device="_TO92" technology="0">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="2N7000."/>
+<attribute name="OC_NEWARK" value="26AC6371"/>
+</part>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="LED1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SFH482" package3d_urn="urn:adsk.eagle:package:6240546/1"/>
-<part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="78*" device="T" package3d_urn="urn:adsk.eagle:package:16414/1" technology="05"/>
+<part name="LED1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SFH482" package3d_urn="urn:adsk.eagle:package:6240546/1">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="78*" device="T" package3d_urn="urn:adsk.eagle:package:16414/1" technology="05">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="NCP7805TG"/>
+<attribute name="OC_NEWARK" value="81Y6957"/>
+</part>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="F1" library="MINISMDC110F-2" deviceset="MINISMDC110F-2" device=""/>
+<part name="F1" library="MINISMDC110F-2" deviceset="MINISMDC110F-2" device="">
+<attribute name="MF" value="RAYCHEM/POLYSWITCH"/>
+<attribute name="MPN" value="MINISMDC110F-2"/>
+<attribute name="OC_NEWARK" value="98H4540"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -3900,7 +3920,11 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/MINISMDC110F-
 <attribute name="LAST_DATE_TIME" x="344.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="357.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="X1" gate="G$1" x="88.9" y="154.94" smashed="yes"/>
+<instance part="X1" gate="G$1" x="88.9" y="154.94" smashed="yes">
+<attribute name="OC_NEWARK" x="88.9" y="154.94" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="88.9" y="154.94" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="88.9" y="154.94" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="X2" gate="-1" x="119.38" y="198.12" smashed="yes">
 <attribute name="NAME" x="121.92" y="197.358" size="1.524" layer="95"/>
 <attribute name="VALUE" x="118.618" y="199.517" size="1.778" layer="96"/>
@@ -3911,6 +3935,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/MINISMDC110F-
 <instance part="Q1" gate="G$1" x="45.72" y="167.64" smashed="yes" rot="R180">
 <attribute name="NAME" x="39.116" y="166.878" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="39.116" y="169.164" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_NEWARK" x="45.72" y="167.64" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="45.72" y="167.64" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="45.72" y="167.64" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+1" gate="VCC" x="45.72" y="127" smashed="yes" rot="R180">
 <attribute name="VALUE" x="48.26" y="129.54" size="1.778" layer="96" rot="R270"/>
@@ -3921,10 +3948,16 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/MINISMDC110F-
 <instance part="LED1" gate="G$1" x="45.72" y="149.86" smashed="yes">
 <attribute name="NAME" x="49.276" y="145.288" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="51.435" y="145.288" size="1.778" layer="96" rot="R90"/>
+<attribute name="OC_NEWARK" x="45.72" y="149.86" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="45.72" y="149.86" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="45.72" y="149.86" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="IC1" gate="A1" x="83.82" y="226.06" smashed="yes" rot="R270">
 <attribute name="NAME" x="89.535" y="233.68" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="86.995" y="233.68" size="1.778" layer="96" rot="R270"/>
+<attribute name="OC_NEWARK" x="83.82" y="226.06" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="83.82" y="226.06" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="83.82" y="226.06" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+2" gate="VCC" x="83.82" y="246.38" smashed="yes">
 <attribute name="VALUE" x="81.28" y="243.84" size="1.778" layer="96" rot="R90"/>
@@ -3935,6 +3968,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/MINISMDC110F-
 <instance part="F1" gate="G$1" x="83.82" y="187.96" smashed="yes" rot="R90">
 <attribute name="NAME" x="76.2" y="204.47" size="1.778" layer="95" rot="R90" align="center-left"/>
 <attribute name="VALUE" x="78.74" y="204.47" size="1.778" layer="96" rot="R90" align="center-left"/>
+<attribute name="OC_NEWARK" x="83.82" y="187.96" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="83.82" y="187.96" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="83.82" y="187.96" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>

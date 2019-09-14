@@ -673,7 +673,11 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="X1" library="raspberrypi_bastelstube_v13" package="RASPI_BOARD_B+_EDGES_0DRILL" value="RASPI_BOARD_B+_E0" x="0" y="0" smashed="yes"/>
+<element name="X1" library="raspberrypi_bastelstube_v13" package="RASPI_BOARD_B+_EDGES_0DRILL" value="RASPI_BOARD_B+_E0" x="0" y="0" smashed="yes">
+<attribute name="MF" value="" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="0" y="0" size="1.778" layer="27" display="off"/>
+</element>
 <element name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" package="22-23-2021" package3d_urn="urn:adsk.eagle:package:8078633/1" value="22-23-2021" x="10" y="44" smashed="yes" rot="R90">
 <attribute name="MF" value="MOLEX" x="-2" y="36" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="22-23-2021" x="-2" y="36" size="1.778" layer="27" rot="R90" display="off"/>
@@ -684,15 +688,24 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="15.08" y="41.46" size="1.016" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="Q1" library="transistors" package="TO-92" value="" x="19" y="44" smashed="yes" rot="R270">
+<attribute name="MF" value="" x="19" y="44" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="2N7000." x="19" y="44" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="16.54" y="46.77" size="1.27" layer="25" ratio="10"/>
+<attribute name="OC_NEWARK" value="26AC6371" x="19" y="44" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="17.73" y="40.825" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="LED1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="SFH482" package3d_urn="urn:adsk.eagle:package:6240546/1" value="" x="15" y="35" smashed="yes" rot="R180">
+<attribute name="MF" value="" x="15" y="35" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="15" y="35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="16.27" y="31.952" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="OC_NEWARK" value="unknown" x="15" y="35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="16.27" y="39.318" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" package="TO220H" package3d_urn="urn:adsk.eagle:package:16414/1" value="7805T" x="35" y="41" smashed="yes">
+<attribute name="MF" value="" x="35" y="41" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="NCP7805TG" x="35" y="41" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="29.539" y="30.078" size="1.778" layer="25" ratio="10" rot="R90"/>
+<attribute name="OC_NEWARK" value="81Y6957" x="35" y="41" size="1.778" layer="27" display="off"/>
 <attribute name="POPULARITY" value="35" x="35" y="41" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="42.366" y="29.951" size="1.778" layer="27" ratio="10" rot="R90"/>
 </element>
@@ -701,9 +714,12 @@ design rules under a new name.</description>
 <attribute name="HEIGHT" value="0.62mm" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="LITTELFUSE" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="MINISMDC110F-2" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="RAYCHEM/POLYSWITCH" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="650-MINISMDC110F-2" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=650-MINISMDC110F-2" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="MINISMDC110F-2" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="25" y="43" size="1.27" layer="25" rot="R270" align="center"/>
+<attribute name="OC_NEWARK" value="98H4540" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="25" y="43" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 </elements>
