@@ -3855,7 +3855,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="MPN" value=""/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
-<part name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device="" package3d_urn="urn:adsk.eagle:package:8078633/1"/>
+<part name="24V_SUPPLY" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device="" package3d_urn="urn:adsk.eagle:package:8078633/1"/>
 <part name="Q1" library="transistors" deviceset="2N700*" device="_TO92" technology="0">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="2N7000."/>
@@ -3897,11 +3897,11 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="MF" x="88.9" y="154.94" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="88.9" y="154.94" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="X2" gate="-1" x="119.38" y="198.12" smashed="yes">
+<instance part="24V_SUPPLY" gate="-1" x="119.38" y="198.12" smashed="yes">
 <attribute name="NAME" x="121.92" y="197.358" size="1.524" layer="95"/>
 <attribute name="VALUE" x="118.618" y="199.517" size="1.778" layer="96"/>
 </instance>
-<instance part="X2" gate="-2" x="119.38" y="195.58" smashed="yes">
+<instance part="24V_SUPPLY" gate="-2" x="119.38" y="195.58" smashed="yes">
 <attribute name="NAME" x="121.92" y="194.818" size="1.524" layer="95"/>
 </instance>
 <instance part="Q1" gate="G$1" x="45.72" y="167.64" smashed="yes" rot="R180">
@@ -3944,7 +3944,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <nets>
 <net name="VCC" class="0">
 <segment>
-<pinref part="X2" gate="-1" pin="S"/>
+<pinref part="24V_SUPPLY" gate="-1" pin="S"/>
 <wire x1="116.84" y1="198.12" x2="104.14" y2="198.12" width="0.1524" layer="91"/>
 <label x="104.14" y="198.12" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -3961,7 +3961,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="X2" gate="-2" pin="S"/>
+<pinref part="24V_SUPPLY" gate="-2" pin="S"/>
 <wire x1="116.84" y1="195.58" x2="114.3" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="195.58" x2="114.3" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="193.04" x2="104.14" y2="193.04" width="0.1524" layer="91"/>
