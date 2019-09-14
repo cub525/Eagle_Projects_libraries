@@ -3800,62 +3800,38 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="MINISMDC110F-2">
-<description>&lt;Littelfuse 1.1A Surface Mount Resettable Fuse, 8V dc&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<library name="Test">
 <packages>
-<package name="FUSC4632X62N">
-<description>&lt;b&gt;MINISMDC110F&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-2.065" y="0" dx="3.43" dy="1.31" layer="1" rot="R90"/>
-<smd name="2" x="2.065" y="0" dx="3.43" dy="1.31" layer="1" rot="R90"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-2.97" y1="1.965" x2="2.97" y2="1.965" width="0.05" layer="51"/>
-<wire x1="2.97" y1="1.965" x2="2.97" y2="-1.965" width="0.05" layer="51"/>
-<wire x1="2.97" y1="-1.965" x2="-2.97" y2="-1.965" width="0.05" layer="51"/>
-<wire x1="-2.97" y1="-1.965" x2="-2.97" y2="1.965" width="0.05" layer="51"/>
-<wire x1="-2.275" y1="1.62" x2="2.275" y2="1.62" width="0.1" layer="51"/>
-<wire x1="2.275" y1="1.62" x2="2.275" y2="-1.62" width="0.1" layer="51"/>
-<wire x1="2.275" y1="-1.62" x2="-2.275" y2="-1.62" width="0.1" layer="51"/>
-<wire x1="-2.275" y1="-1.62" x2="-2.275" y2="1.62" width="0.1" layer="51"/>
-<wire x1="0" y1="1.52" x2="0" y2="-1.52" width="0.2" layer="21"/>
+<package name="MF-MSMF260-2">
+<smd name="P$1" x="0" y="0" dx="3.2" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$2" x="-2.7" y="0" dx="3.2" dy="1.5" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
-<symbol name="MINISMDC110F-2">
-<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="1" x="0" y="0" length="middle"/>
-<pin name="2" x="20.32" y="0" length="middle" rot="R180"/>
+<symbol name="MF-MSMF260-2">
+<wire x1="-3" y1="1" x2="-3" y2="-1" width="0.254" layer="94"/>
+<wire x1="-3" y1="-1" x2="3" y2="-1" width="0.254" layer="94"/>
+<wire x1="3" y1="-1" x2="3" y2="1" width="0.254" layer="94"/>
+<wire x1="3" y1="1" x2="-3" y2="1" width="0.254" layer="94"/>
+<wire x1="-3" y1="-2" x2="-1" y2="-2" width="0.254" layer="94"/>
+<wire x1="-1" y1="-2" x2="3" y2="2" width="0.254" layer="94"/>
+<pin name="P$1" x="-8" y="0" visible="pad" length="middle"/>
+<pin name="P$2" x="8" y="0" visible="pad" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MINISMDC110F-2" prefix="F">
-<description>&lt;b&gt;Littelfuse 1.1A Surface Mount Resettable Fuse, 8V dc&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/MINISMDC110F-2.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<deviceset name="MF-MSMF260-2" prefix="F" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="MINISMDC110F-2" x="0" y="0"/>
+<gate name="G$1" symbol="MF-MSMF260-2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="FUSC4632X62N">
+<device name="" package="MF-MSMF260-2">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="Littelfuse 1.1A Surface Mount Resettable Fuse, 8V dc" constant="no"/>
-<attribute name="HEIGHT" value="0.62mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="LITTELFUSE" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="MINISMDC110F-2" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="650-MINISMDC110F-2" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=650-MINISMDC110F-2" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -3899,11 +3875,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/MINISMDC110F-
 </part>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="F1" library="MINISMDC110F-2" deviceset="MINISMDC110F-2" device="">
-<attribute name="MF" value="RAYCHEM/POLYSWITCH"/>
-<attribute name="MPN" value="MINISMDC110F-2"/>
-<attribute name="OC_NEWARK" value="98H4540"/>
-</part>
+<part name="F1" library="Test" deviceset="MF-MSMF260-2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3965,13 +3937,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/MINISMDC110F-
 <instance part="GND2" gate="1" x="63.5" y="226.06" smashed="yes" rot="R270">
 <attribute name="VALUE" x="60.96" y="228.6" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="F1" gate="G$1" x="83.82" y="187.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="76.2" y="204.47" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="78.74" y="204.47" size="1.778" layer="96" rot="R90" align="center-left"/>
-<attribute name="OC_NEWARK" x="83.82" y="187.96" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="83.82" y="187.96" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="83.82" y="187.96" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="F1" gate="G$1" x="83.82" y="200.66" smashed="yes" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -4029,15 +3995,19 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/MINISMDC110F-
 <net name="N$1" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="5V0"/>
-<pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="187.96" x2="83.82" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="187.96" x2="83.82" y2="192.66" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="P$1"/>
+<wire x1="83.82" y1="192.66" x2="83.82" y2="182.88" width="0.1524" layer="91"/>
+<junction x="83.82" y="192.66"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="IC1" gate="A1" pin="VO"/>
-<pinref part="F1" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="208.28" x2="83.82" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="208.28" x2="83.82" y2="208.66" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="P$2"/>
+<wire x1="83.82" y1="208.66" x2="83.82" y2="215.9" width="0.1524" layer="91"/>
+<junction x="83.82" y="208.66"/>
 </segment>
 </net>
 </nets>

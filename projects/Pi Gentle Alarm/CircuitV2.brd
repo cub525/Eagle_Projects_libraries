@@ -199,6 +199,9 @@
 <wire x1="45" y1="20" x2="44" y2="19" width="0" layer="20" curve="90"/>
 <wire x1="46" y1="4" x2="45" y2="3" width="0" layer="20" curve="-90"/>
 <wire x1="44" y1="4" x2="45" y2="3" width="0" layer="20" curve="90"/>
+<text x="9" y="10" size="1.778" layer="21">EMMETT HART
+RPI GENTLE ALARM HAT
+2019</text>
 </plain>
 <libraries>
 <library name="raspberrypi_bastelstube_v13">
@@ -454,26 +457,11 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 </package3d>
 </packages3d>
 </library>
-<library name="MINISMDC110F-2">
-<description>&lt;Littelfuse 1.1A Surface Mount Resettable Fuse, 8V dc&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<library name="Test">
 <packages>
-<package name="FUSC4632X62N">
-<description>&lt;b&gt;MINISMDC110F&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-2.065" y="0" dx="3.43" dy="1.31" layer="1" rot="R90"/>
-<smd name="2" x="2.065" y="0" dx="3.43" dy="1.31" layer="1" rot="R90"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-2.97" y1="1.965" x2="2.97" y2="1.965" width="0.05" layer="51"/>
-<wire x1="2.97" y1="1.965" x2="2.97" y2="-1.965" width="0.05" layer="51"/>
-<wire x1="2.97" y1="-1.965" x2="-2.97" y2="-1.965" width="0.05" layer="51"/>
-<wire x1="-2.97" y1="-1.965" x2="-2.97" y2="1.965" width="0.05" layer="51"/>
-<wire x1="-2.275" y1="1.62" x2="2.275" y2="1.62" width="0.1" layer="51"/>
-<wire x1="2.275" y1="1.62" x2="2.275" y2="-1.62" width="0.1" layer="51"/>
-<wire x1="2.275" y1="-1.62" x2="-2.275" y2="-1.62" width="0.1" layer="51"/>
-<wire x1="-2.275" y1="-1.62" x2="-2.275" y2="1.62" width="0.1" layer="51"/>
-<wire x1="0" y1="1.52" x2="0" y2="-1.52" width="0.2" layer="21"/>
+<package name="MF-MSMF260-2">
+<smd name="P$1" x="0" y="0" dx="3.2" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$2" x="-2.7" y="0" dx="3.2" dy="1.5" layer="1" rot="R90"/>
 </package>
 </packages>
 </library>
@@ -709,19 +697,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="35" x="35" y="41" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="42.366" y="29.951" size="1.778" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="F1" library="MINISMDC110F-2" package="FUSC4632X62N" value="MINISMDC110F-2" x="25" y="43" smashed="yes" rot="R270">
-<attribute name="DESCRIPTION" value="Littelfuse 1.1A Surface Mount Resettable Fuse, 8V dc" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="HEIGHT" value="0.62mm" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="LITTELFUSE" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="MINISMDC110F-2" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="RAYCHEM/POLYSWITCH" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="650-MINISMDC110F-2" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=650-MINISMDC110F-2" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="MINISMDC110F-2" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="25" y="43" size="1.27" layer="25" rot="R270" align="center"/>
-<attribute name="OC_NEWARK" value="98H4540" x="25" y="43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="25" y="43" size="1.27" layer="27" rot="R270" align="center"/>
-</element>
+<element name="F1" library="Test" package="MF-MSMF260-2" value="" x="25" y="47" smashed="yes" rot="R90"/>
 </elements>
 <signals>
 <signal name="S$28">
@@ -789,28 +765,52 @@ design rules under a new name.</description>
 <contactref element="X2" pad="1"/>
 <contactref element="LED1" pad="K"/>
 <contactref element="IC1" pad="1"/>
-<wire x1="13.73" y1="35" x2="32.46" y2="30.84" width="0" layer="19" extent="1-1"/>
-<wire x1="10" y1="42.73" x2="13.73" y2="35" width="0" layer="19" extent="1-1"/>
+<wire x1="32.46" y1="30.84" x2="17.89" y2="30.84" width="0.3048" layer="1"/>
+<wire x1="17.89" y1="30.84" x2="13.73" y2="35" width="0.3048" layer="1"/>
+<wire x1="10" y1="42.73" x2="10" y2="38.73" width="0.3048" layer="1"/>
+<wire x1="10" y1="38.73" x2="13.73" y2="35" width="0.3048" layer="1"/>
 </signal>
 <signal name="GPIO17">
 <contactref element="Q1" pad="2"/>
 <contactref element="X1" pad="11"/>
-<wire x1="20.905" y1="44" x2="21.07" y2="51.23" width="0" layer="19" extent="1-1"/>
+<wire x1="20.905" y1="44" x2="20.905" y2="51.065" width="0.3048" layer="16"/>
+<wire x1="20.905" y1="51.065" x2="21.07" y2="51.23" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$6">
 <contactref element="Q1" pad="3"/>
 <contactref element="LED1" pad="A"/>
-<wire x1="16.27" y1="35" x2="19" y2="42.73" width="0" layer="19" extent="1-1"/>
+<wire x1="16.27" y1="35" x2="19" y2="37.73" width="0.3048" layer="1"/>
+<wire x1="19" y1="37.73" x2="19" y2="42.73" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="X1" pad="2"/>
-<contactref element="F1" pad="1"/>
-<wire x1="8.37" y1="53.77" x2="25" y2="45.065" width="0" layer="19" extent="1-1"/>
+<contactref element="F1" pad="P$1"/>
+<wire x1="7.0746" y1="52.2873375" x2="7.0746" y2="50.1726625" width="0.3048" layer="1"/>
+<wire x1="7.0746" y1="50.1726625" x2="10.2472625" y2="47" width="0.3048" layer="1"/>
+<wire x1="10.2472625" y1="47" x2="25" y2="47" width="0.3048" layer="1"/>
+<wire x1="8.37" y1="53.77" x2="8.37" y2="53.5827375" width="0.3048" layer="1"/>
+<wire x1="8.37" y1="53.5827375" x2="7.0746" y2="52.2873375" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="IC1" pad="3"/>
-<contactref element="F1" pad="2"/>
-<wire x1="25" y1="40.935" x2="37.54" y2="30.84" width="0" layer="19" extent="1-1"/>
+<contactref element="F1" pad="P$2"/>
+<wire x1="25" y1="44.3" x2="37.54" y2="31.76" width="0.3048" layer="1"/>
+<wire x1="37.54" y1="31.76" x2="37.54" y2="30.84" width="0.3048" layer="1"/>
+</signal>
+<signal name="N$3">
+<via x="15" y="44" extent="1-16" drill="0.508"/>
+</signal>
+<signal name="N$4">
+<via x="23" y="39" extent="1-16" drill="0.508"/>
+</signal>
+<signal name="N$5">
+<via x="8" y="35" extent="1-16" drill="0.508"/>
+</signal>
+<signal name="N$7">
+<via x="24" y="27" extent="1-16" drill="0.508"/>
+</signal>
+<signal name="N$8">
+<via x="29" y="44" extent="1-16" drill="0.508"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -831,6 +831,10 @@ design rules under a new name.</description>
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
