@@ -3838,6 +3838,77 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SamacSys_Parts">
+<description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="TE-6MM-TACT-SWITCH">
+<description>&lt;b&gt;TE-6MM-TACT-SWITCH&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="3.25" y="-2.25" drill="1.04" diameter="1.54"/>
+<pad name="2" x="-3.25" y="-2.25" drill="0.99" diameter="1.5"/>
+<pad name="3" x="3.25" y="2.25" drill="0.99" diameter="1.5"/>
+<pad name="4" x="-3.25" y="2.25" drill="0.99" diameter="1.5"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.1" layer="21"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.1" layer="21"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.1" layer="21"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.1" layer="21"/>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.1" layer="51"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.1" layer="51"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.1" layer="51"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.1" layer="51"/>
+<wire x1="2.984" y1="-3.672" x2="3.473" y2="-3.672" width="0.1" layer="21"/>
+<wire x1="3.473" y1="-3.672" x2="3.473" y2="-4.062" width="0.1" layer="21"/>
+<wire x1="3.473" y1="-4.062" x2="2.984" y2="-4.062" width="0.1" layer="21"/>
+<wire x1="2.984" y1="-4.062" x2="2.984" y2="-3.672" width="0.1" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="2-1825910-7">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" length="middle"/>
+<pin name="2" x="0" y="-2.54" length="middle"/>
+<pin name="3" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="4" x="20.32" y="-2.54" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="2-1825910-7" prefix="S">
+<description>&lt;b&gt;Black Tactile Tactile Switch, SPST 50 mA 9.4mm&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/2-1825910-7.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="2-1825910-7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TE-6MM-TACT-SWITCH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Black Tactile Tactile Switch, SPST 50 mA 9.4mm" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="TE Connectivity" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="2-1825910-7" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="506-2-1825910-7" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=506-2-1825910-7" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3876,6 +3947,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="F1" library="Test" deviceset="MF-MSMF260-2" device=""/>
+<part name="S1" library="SamacSys_Parts" deviceset="2-1825910-7" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3899,30 +3971,29 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </instance>
 <instance part="24V_SUPPLY" gate="-1" x="119.38" y="198.12" smashed="yes">
 <attribute name="NAME" x="121.92" y="197.358" size="1.524" layer="95"/>
-<attribute name="VALUE" x="118.618" y="199.517" size="1.778" layer="96"/>
 </instance>
 <instance part="24V_SUPPLY" gate="-2" x="119.38" y="195.58" smashed="yes">
 <attribute name="NAME" x="121.92" y="194.818" size="1.524" layer="95"/>
 </instance>
-<instance part="Q1" gate="G$1" x="45.72" y="167.64" smashed="yes" rot="R180">
-<attribute name="NAME" x="39.116" y="166.878" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="39.116" y="169.164" size="1.778" layer="96" rot="R180"/>
-<attribute name="OC_NEWARK" x="45.72" y="167.64" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="45.72" y="167.64" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="45.72" y="167.64" size="1.778" layer="96" display="off"/>
+<instance part="Q1" gate="G$1" x="22.86" y="167.64" smashed="yes" rot="R180">
+<attribute name="NAME" x="16.256" y="166.878" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="16.256" y="169.164" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_NEWARK" x="22.86" y="167.64" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="22.86" y="167.64" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="22.86" y="167.64" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="P+1" gate="VCC" x="45.72" y="127" smashed="yes" rot="R180">
-<attribute name="VALUE" x="48.26" y="129.54" size="1.778" layer="96" rot="R270"/>
+<instance part="P+1" gate="VCC" x="22.86" y="127" smashed="yes" rot="R180">
+<attribute name="VALUE" x="25.4" y="129.54" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND1" gate="1" x="45.72" y="182.88" smashed="yes" rot="R180">
-<attribute name="VALUE" x="48.26" y="185.42" size="1.778" layer="96" rot="R180"/>
+<instance part="GND1" gate="1" x="22.86" y="182.88" smashed="yes" rot="R180">
+<attribute name="VALUE" x="25.4" y="185.42" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LED1" gate="G$1" x="45.72" y="149.86" smashed="yes">
-<attribute name="NAME" x="49.276" y="145.288" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="51.435" y="145.288" size="1.778" layer="96" rot="R90"/>
-<attribute name="OC_NEWARK" x="45.72" y="149.86" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="45.72" y="149.86" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="45.72" y="149.86" size="1.778" layer="96" display="off"/>
+<instance part="LED1" gate="G$1" x="22.86" y="149.86" smashed="yes">
+<attribute name="NAME" x="26.416" y="145.288" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="28.575" y="145.288" size="1.778" layer="96" rot="R90"/>
+<attribute name="OC_NEWARK" x="22.86" y="149.86" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="22.86" y="149.86" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="22.86" y="149.86" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="IC1" gate="A1" x="83.82" y="226.06" smashed="yes" rot="R270">
 <attribute name="NAME" x="89.535" y="233.68" size="1.778" layer="95" rot="R270"/>
@@ -3938,6 +4009,10 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="VALUE" x="60.96" y="228.6" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="F1" gate="G$1" x="83.82" y="200.66" smashed="yes" rot="R90"/>
+<instance part="S1" gate="G$1" x="38.1" y="165.1" smashed="yes">
+<attribute name="NAME" x="54.61" y="172.72" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="54.61" y="170.18" size="1.778" layer="96" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3950,7 +4025,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </segment>
 <segment>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="45.72" y1="144.78" x2="45.72" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="144.78" x2="22.86" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 </segment>
 <segment>
@@ -3970,7 +4045,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <segment>
 <pinref part="Q1" gate="G$1" pin="S"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="45.72" y1="177.8" x2="45.72" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="177.8" x2="22.86" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A1" pin="GND"/>
@@ -3980,15 +4055,19 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </net>
 <net name="GPIO17" class="0">
 <segment>
-<wire x1="73.66" y1="170.18" x2="55.88" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="170.18" x2="38.1" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <pinref part="X1" gate="G$1" pin="GPIO17"/>
+<pinref part="S1" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="170.18" x2="33.02" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="165.1" x2="38.1" y2="170.18" width="0.1524" layer="91"/>
+<junction x="38.1" y="170.18"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="D"/>
-<wire x1="45.72" y1="152.4" x2="45.72" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="152.4" x2="22.86" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
 </segment>
 </net>
@@ -4008,6 +4087,14 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="F1" gate="G$1" pin="P$2"/>
 <wire x1="83.82" y1="208.66" x2="83.82" y2="215.9" width="0.1524" layer="91"/>
 <junction x="83.82" y="208.66"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="S1" gate="G$1" pin="3"/>
+<pinref part="X1" gate="G$1" pin="GPIO18"/>
+<wire x1="58.42" y1="165.1" x2="58.42" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="167.64" x2="73.66" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
