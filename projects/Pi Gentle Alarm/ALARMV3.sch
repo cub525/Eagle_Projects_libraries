@@ -6945,7 +6945,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/2-1825910-7.p
 <part name="F1" library="Test" deviceset="MF-MSMF260-2" device=""/>
 <part name="S1" library="SamacSys_Parts" deviceset="2-1825910-7" device=""/>
 <part name="C1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="050-024X044" package3d_urn="urn:adsk.eagle:package:6240356/1" value="22uf"/>
-<part name="C2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="050-024X044" package3d_urn="urn:adsk.eagle:package:6240356/1" value=".1uf"/>
 </parts>
 <sheets>
 <sheet>
@@ -7015,10 +7014,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/2-1825910-7.p
 <attribute name="NAME" x="112.395" y="230.124" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="107.569" y="230.124" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C2" gate="G$1" x="83.82" y="220.98" smashed="yes">
-<attribute name="NAME" x="84.836" y="221.615" size="1.778" layer="95"/>
-<attribute name="VALUE" x="84.836" y="216.789" size="1.778" layer="96"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -7082,18 +7077,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/2-1825910-7.p
 <junction x="83.82" y="192.66"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<wire x1="83.82" y1="208.28" x2="83.82" y2="208.66" width="0.1524" layer="91"/>
-<pinref part="F1" gate="G$1" pin="P$2"/>
-<junction x="83.82" y="208.66"/>
-<pinref part="S1" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="208.66" x2="58.42" y2="208.66" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="208.66" x2="58.42" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="215.9" x2="83.82" y2="208.66" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="3"/>
@@ -7112,8 +7095,13 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/2-1825910-7.p
 <net name="N$5" class="0">
 <segment>
 <pinref part="IC1" gate="A1" pin="VO"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="231.14" x2="83.82" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="208.28" x2="83.82" y2="208.66" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="P$2"/>
+<junction x="83.82" y="208.66"/>
+<pinref part="S1" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="208.66" x2="58.42" y2="208.66" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="208.66" x2="58.42" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="231.14" x2="83.82" y2="208.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
