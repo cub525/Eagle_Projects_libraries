@@ -59,6 +59,27 @@
 <description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
 <packages>
+<package name="TO270P460X1020X2008-3P">
+<description>&lt;b&gt;TO-220 TYPE A&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.32" diameter="1.98" shape="square" />
+<pad name="2" x="2.7" y="0" drill="1.32" diameter="1.98" />
+<pad name="3" x="5.4" y="0" drill="1.32" diameter="1.98" />
+<text x="0" y="0" align="center" size="1.27" layer="25" rot="R0">&gt;NAME</text>
+<text x="0" y="0" align="center" size="1.27" layer="27" rot="R0">&gt;VALUE</text>
+<wire x1="-2.75" y1="3.32" x2="8.15" y2="3.32" width="0.05" layer="51" />
+<wire x1="8.15" y1="3.32" x2="8.15" y2="-1.78" width="0.05" layer="51" />
+<wire x1="8.15" y1="-1.78" x2="-2.75" y2="-1.78" width="0.05" layer="51" />
+<wire x1="-2.75" y1="-1.78" x2="-2.75" y2="3.32" width="0.05" layer="51" />
+<wire x1="-2.5" y1="3.07" x2="7.9" y2="3.07" width="0.1" layer="51" />
+<wire x1="7.9" y1="3.07" x2="7.9" y2="-1.53" width="0.1" layer="51" />
+<wire x1="7.9" y1="-1.53" x2="-2.5" y2="-1.53" width="0.1" layer="51" />
+<wire x1="-2.5" y1="-1.53" x2="-2.5" y2="3.07" width="0.1" layer="51" />
+<wire x1="-2.5" y1="1.72" x2="-1.15" y2="3.07" width="0.1" layer="51" />
+<wire x1="7.9" y1="-1.53" x2="7.9" y2="3.07" width="0.2" layer="21" />
+<wire x1="7.9" y1="3.07" x2="-2.5" y2="3.07" width="0.2" layer="21" />
+<wire x1="-2.5" y1="3.07" x2="-2.5" y2="0" width="0.2" layer="21" />
+</package>
 <package name="TE-6MM-TACT-SWITCH">
 <description>&lt;b&gt;TE-6MM-TACT-SWITCH&lt;/b&gt;&lt;br&gt;
 </description>
@@ -83,6 +104,17 @@
 </package>
 </packages>
 <symbols>
+<symbol name="STP14NF10">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94" />
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94" />
+<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94" />
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94" />
+<text x="16.51" y="7.62" align="center-left" size="1.778" layer="95">&gt;NAME</text>
+<text x="16.51" y="5.08" align="center-left" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="G" x="0" y="0" length="middle" direction="io" rot="R0" />
+<pin name="2" x="0" y="-2.54" length="middle" direction="io" rot="R0" />
+<pin name="S" x="20.32" y="0" length="middle" direction="io" rot="R180" />
+</symbol>
 <symbol name="2-1825910-7">
 <wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94" />
 <wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94" />
@@ -97,6 +129,32 @@
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="STP14NF10" prefix="IC">
+<description>&lt;b&gt;STP14NF10, N-channel MOSFET Transistor 15 A 100 V, 3-Pin TO-220&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STP14NF10.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="STP14NF10" x="0" y="0" />
+</gates>
+<devices>
+<device name="" package="TO270P460X1020X2008-3P">
+<connects>
+<connect gate="G$1" pin="G" pad="1" />
+<connect gate="G$1" pin="2" pad="2" />
+<connect gate="G$1" pin="S" pad="3" />
+</connects>
+<technologies>
+<technology name="">
+<attribute name="Mouser_Part_Number" value="511-STP14NF10" constant="no" />
+<attribute name="Mouser_Price-Stock" value="https://www.mouser.com/Search/Refine.aspx?Keyword=511-STP14NF10" constant="no" />
+<attribute name="Manufacturer_Name" value="STMicroelectronics" constant="no" />
+<attribute name="Manufacturer_Part_Number" value="STP14NF10" constant="no" />
+<attribute name="Description" value="STP14NF10, N-channel MOSFET Transistor 15 A 100 V, 3-Pin TO-220" constant="no" />
+<attribute name="Height" value="4.6mm" constant="no" />
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="2-1825910-7" prefix="S">
 <description>&lt;b&gt;Black Tactile Tactile Switch, SPST 50 mA 9.4mm&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/2-1825910-7.pdf"&gt; Datasheet &lt;/a&gt;</description>
